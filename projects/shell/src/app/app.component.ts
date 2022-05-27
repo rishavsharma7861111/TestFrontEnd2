@@ -21,7 +21,7 @@ export class AppComponent {
           filter(authState => !!authState && !!authState.isAuthenticated),
           map(authState => authState.idToken?.claims.name ?? '')
       );
-
+// asd
   constructor(private oktaStateService: OktaAuthStateService, @Inject(OKTA_AUTH) private oktaAuth: OktaAuth) { }
 
   public async signIn(): Promise<void> {
